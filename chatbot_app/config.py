@@ -1,0 +1,3 @@
+CLIENT_ID = '26685'
+CLIENT_SECRET = '*xJCd2x0uTp24Z)0S)upCw(('
+API_KEY = 'g7ca7oEFYkZ9rdUpMAT04g(('

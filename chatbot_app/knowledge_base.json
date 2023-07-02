@@ -1,0 +1,22 @@
+{
+  "Topic name": [
+    {
+      "question": "What is Python?",
+      "answer": "Python is a widely used programming language known for its simplicity and readability."
+    },
+    {
+      "question": "What are the advantages of using Python?",
+      "answer": "Some advantages of using Python include its ease of use, extensive standard library, and strong community support."
+    }
+  ],
+  "Variable": [
+    {
+      "question": "How do you declare a variable in Python?",
+      "answer": "In Python, you can declare a variable by assigning a value to it using the assignment operator (=)."
+    },
+    {
+      "question": "What are the different data types in Python?",
+      "answer": "Python supports various data types, including integers, floats, strings, lists, tuples, dictionaries, and more."
+    }
+  ]
+}

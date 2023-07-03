@@ -17,15 +17,17 @@ To run this project locally, please follow the instructions below.
 
 ```shell
 https://github.com/soale2/cautious-octo-waddle.git 
+```
 
 2. Navigate to the Project Directory:
 
 ```shell
 cd chatbot-project
+```
 
-3. Install the required dependencies:
+4. Install the required dependencies:
 
-```shell
+```shell   
 pip install -r requirements.txt
 ```
 

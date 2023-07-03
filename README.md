@@ -10,7 +10,6 @@ To run this project locally, please follow the instructions below.
 
 - Python (3.6 or higher)
 - Django (3.2 or higher)
-- ChatGPT or any other language model API (credentials required)
 
 ### Installation
 

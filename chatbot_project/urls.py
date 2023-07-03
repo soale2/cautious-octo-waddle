@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.urls import path
 from chatbot_app import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.chatbot, name='chatbot'),
     path('api/chatbot/', views.chatbot_api_view, name='chatbot_api'),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

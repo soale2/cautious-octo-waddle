@@ -4,11 +4,82 @@
 <html>
 <head>
     <title>Chatbot</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <style>
         /* Additional CSS styles for chat bubbles and layout */
-        
+        .chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.chat-log {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+.chat-bubble {
+    background-color: #007aff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Increase the margin-bottom value to add more spacing */
+}
+
+.user-bubble {
+    background-color: #e5e5ea;
+    color: #000;
+    align-self: flex-end;
+}
+
+#user-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#user-query {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+#submit-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#submit-icon {
+    width: 24px;
+    height: 24px;
+    fill: #007aff;
+}
+
+#response-div {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
     </style>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <div class="chat-container">
@@ -19,7 +90,12 @@
                 {% csrf_token %}
                 <div id="input-container">
                     <input type="text" id="user-query" placeholder="Enter your query">
-                    <button id="submit-btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#007aff" width="24px" height="24px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18 6H6c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 10H6V8h12v8zm-4.41-5.59L10 13.17l-1.59-1.59L7 14l3 3 5-5-1.41-1.41z"/></svg></button>
+                    <button id="submit-btn" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#007aff" width="24px" height="24px">
+                            <path d="M0 0h24v24H0V0z" fill="none"/>
+                            <path d="M18 6H6c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 10H6V8h12v8zm-4.41-5.59L10 13.17l-1.59-1.59L7 14l3 3 5-5-1.41-1.41z"/>
+                        </svg>
+                    </button>
                 </div>
             </form>
         </div>

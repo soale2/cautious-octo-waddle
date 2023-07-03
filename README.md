@@ -28,5 +28,16 @@ cd chatbot-project
 
 ```shell
 pip install -r requirements.txt
+```
 
-### Installation
+### Usage
+
+# Start the Django Server:
+
+```shell
+python manage.py runserver
+```
+
+1. Open your web browser and navigate to http://localhost:8000 to access the chatbot interface.
+
+2. Enter your queries in the input field and click the "Send" button to receive responses from the chatbot.

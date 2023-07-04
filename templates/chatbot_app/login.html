@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        body
+{
+    margin: 0;
+    padding: 0;
+    background: url(login.jpg);
+    font-family: 'Arial';
+}
+.login{
+        width: 382px;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 80px;
+        background: #0b065e;
+        border-radius: 15px ;
+}
+
+h2{
+    font-size: 1.6rem;
+    text-align: center;
+    color: #000000;
+    padding: 20px;
+}
+label{
+    color: #38baf2;
+    font-size: 17px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: #1f6acd;
+    
+
+
+}
+span{
+    color: white;
+    font-size: 17px;
+}
+a{
+    color: white;
+    font-size: 17px;
+    float: centre;
+    padding: 10px 20px;
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <h2>Login Page</h2><br>
+    <div class="login">
+    <form id="login" method="get" action="login.php">
+        <label><b>User Name
+        </b>
+        </label>
+        <input type="text" name="Uname" id="Uname" placeholder="Username">
+        <br><br>
+        <label><b>Password
+        </b>
+        </label>
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+        <br><br>
+        <input type="button" name="log" id="log" value="Log In Here">
+        <br><br>
+        <input type="checkbox" id="check">
+        <span>Remember me</span>
+        <br><br>
+        <a href="#">Forgot Password</a> 
+    </form>
+</div>
+</body>
+</html>

@@ -6,8 +6,17 @@ from difflib import SequenceMatcher
 
 KNOWLEDGE_BASE_PATH = os.path.join(os.path.dirname(__file__), 'knowledge_base.json')
 
+def index(request):
+    return render(request, 'chatbot_app/index.html')
+
+def login(request):
+    return render(request, 'chatbot_app/login.html')
+
 def chatbot(request):
     return render(request, 'chatbot_app/chatbot.html')
+
+def about(request):
+    return render(request, 'chatbot_app/about.html')
 
 def load_knowledge_base():
     with open(KNOWLEDGE_BASE_PATH, 'r') as file:
